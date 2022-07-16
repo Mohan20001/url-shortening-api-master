@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  
+  <title>URL shortening</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container pt-3 pb-3">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img class="w-100" src="./images/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link tab-name" href="#">Features
+                <!-- <span class="sr-only">(current)</span> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-name" href="#">Pricing</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link tab-name" href="#">Resources</a>
+            </li>
+          </ul>
+          <hr class="d-lg-none d-m-block"/>
+          <div class="my-2 my-lg-0 d-flex flex-m-column">
+            <button class="btn pl-3 pl-3 mr-3 my-2 my-sm-0 sign-btn-custom" type="submit">Login</button>
+            <button class="btn btn-outline-light pl-3 pr-3 my-2 my-sm-0 login-btn-custom" type="submit">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row d-flex flex-row mt-5  p-lg-4 p-m-3">
+    <div class="col-lg-6 pt-lg-5">
+      <h1 class="hero-title">More than just shorter links</h1>
+      <p class="hero-dec">Build your brand’s recognition and get detailed insights 
+        on how your links are performing.</p>
+      <button class="btn hero-button pl-4 pr-4 mt-3">Get Started</button>
+    </div>
+    <div class="col-lg-6">
+      <img class="w-100 ml-lg-5" src="./images/illustration-working.svg" alt="">
+    </div>
+  </div>
+<div class="row shorten d-flex justify-m-around p-5 mt-5 mb-5">
+   <input id="user-input"  class="p-3 col-lg-9 col-m-12 ml-auto mr-auto mb-m-5 search-bar" type="text" placeholder="Shorten a link here...">
+   <button id="enter-btn" class="btn p-3 search-enter-btn col-lg-2 col-m-12 ml-auto mr-auto w-100 mt-m-3 ml-lg-2">Shorten It!</button>
+</div>
+<div id="links-list">
+<!-- <div class="row link-c shadow-sm p-3 mb-3">
+    <div class="col-lg-6 col-sm-12"><p class="custom-link-path">https://www.google.com</p></div>
+    <div class="col-lg-6 col-sm-12 text-right"><a href="http://www.google.com">https://www.google.com</a>
+    <button class="btn hero-button ml-md-3 button-copy">COPY</button>
+  </div>
+  </div> -->
+</div>
+</div>
+<div class="row mt-5">
+  <div class="col-lg-6 col-m-12 m-auto text-center mt-5">
+    <h2 class="tt-2 mt-3">Advanced Statistics</h2>
+    <p class="dec-2 mt-3">  Track how your links are performing across the web with our 
+      advanced statistics dashboard.</p>
+  </div>
+</div>
+<div class="row mt-5 pt-3">
+  <div class="a col-lg-4 col-m-6 col-sm-12 mt-lg-0">
+    <div class="card p-3 shadow">
+      <div class="img-wrapper">
+        <img class="icon" src="./images/icon-brand-recognition.svg" alt="">
+      </div>
+      <h4 class="mt-5">Brand Recognition</h4>
+      <p class="mt-2 mb-3">Boost your brand recognition with each click. Generic links don’t 
+        mean a thing. Branded links help instil confidence in your content.</p>
+    </div>
+  
+  </div>
+  <div class="b col-lg-4 col-m-6 col-sm-12 mt-lg-3">
+    <div class="card p-3 shadow mt-lg-1 ">
+      <div class="img-wrapper">
+        <img class="icon" src="./images/icon-detailed-records.svg" alt="">
+      </div>
+      <h4 class="mt-5"> Detailed Records</h4>
+      <p class="mt-2 mb-3">Gain insights into who is clicking your links. Knowing when and where 
+        people engage with your content helps inform better decisions.</p>
+    </div>
+  
+  </div>
+  <div class="c col-lg-4 col-m-6 col-sm-12 mt-lg-1">
+    <div class="card p-3 shadow mt-lg-5">
+      <div class="img-wrapper">
+        <img class="icon" src="./images/icon-fully-customizable.svg" alt="">
+      </div>
+      <h4 class="mt-5">Fully Customizable</h4>
+      <p class="mt-2 mb-3">Improve brand awareness and content discoverability through customizable 
+        links, supercharging audience engagement.</p>
+    </div>
+  
+  </div>
+</div>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row sec-1 text-center p-5">
+    <div class="col-12">
+      <h1 class="h-2">Boost your links today</h1>
+      <button class="btn hero-button pl-4 pr-4 mt-3">Get Started</button>
+    </div>
+  </div>
+  <div class="row bottom-sec p-lg-5">
+    <div class="col-lg-4 col-m-4 col-sm-12">
+      <h1 class="s-logo mb-3">Shortly</h1>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12">
+      <h4 class="f-h">Features</h4>
+      <ul class="mt-3">
+        <li>Link Shortening</li>
+        <li>Branded Links</li>
+        <li>Analytics</li>
+      </ul>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12">
+      <h4 class="f-h">Resources</h4>
+      <ul class="mt-3">
+        <li>Blog</li>
+        <li>Developers</li>
+        <li>Support</li>
+      </ul>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12">
+      <h4 class="f-h">Company</h4>
+      <ul class="mt-3">
+        <li>About</li>
+        <li>Our Team</li>
+        <li>Careers</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12">
+      <div>
+        <img class="social-logo" src="./images/icon-facebook.svg" alt="">
+        <img class="social-logo" src="./images/icon-twitter.svg" alt="">
+        <img class="social-logo" src="./images/icon-pinterest.svg" alt="">
+        <img class="social-logo" src="./images/icon-instagram.svg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

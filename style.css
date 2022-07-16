@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Red+Hat+Text:wght@700&display=swap');
+
+:root{
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-btn-custom, .hero-button, .search-enter-btn{
+    width: 100px;
+    background-color: var(--Cyan) !important;
+    border-radius: 20px;
+    /* font-weight: 600; */
+}
+.sign-btn-custom{
+    width: 80px;
+    background: none;
+    border: 0px !important;
+    outline: none !important;
+    color: gray !important;
+    /* font-weight: 600; */
+    border-radius: 20px;
+}
+.tab-name{
+    color:var(--Dark-Violet);
+    /* font-weight: 600; */
+}
+
+.hero-title{
+    font-weight: bold;
+    font-size:3.5rem;
+    color: var(--Very-Dark-Violet);
+}
+.hero-dec{
+    color: var(--Gray)
+}
+
+.hero-button{
+    width: auto;
+    color: #fff;
+}
+
+.search-enter-btn{
+    border-radius: 6px;
+}
+
+input[type="text"]{
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+.shorten{
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-color: var(--Very-Dark-Violet);
+    border-radius: 6px;
+}
+
+.search-bar::before{
+   content: "";
+}
+
+.tt-2{
+    font-weight: 600;
+    color: var(--Very-Dark-Violet);
+}
+
+.dec-2{
+    color: var(--Grayish-Violet);
+}
+
+.img-wrapper{
+    width: 80px;
+    height: 80px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius:50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+}
+h4{
+    font-weight: 600;
+    color:var(--Very-Dark-Blue);
+}
+p{
+    color:var(--Gray)
+}
+.a, .b, .c{
+    margin-top: 60px;
+}
+
+.sec-1{
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-size:cover;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.h-2{
+    color:#fff;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+    color: #fff;
+    font-size: 16px;
+}
+ul li{
+    color: var(--Gray);
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.bottom-sec{
+    background-color:var(--Very-Dark-Violet)
+}
+.f-h{
+    color: #fff;
+    font-size: 16px;
+}
+.s-logo{
+    color: #fff;
+    font-weight: bold;
+}
+
+.social-logo{
+    width:20px;
+    margin-right:1rem;
+}
+
+.social-logo:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.custom-link-path{
+    color: var(--Very-Dark-Blue);
+}
+
+.link-c{
+    border-radius: 8px;
+}
+
+.button-copy{
+    border-radius: 6px;
+}
+
+.search-enter-btn{
+    color: #fff;
+}
